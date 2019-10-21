@@ -1,6 +1,35 @@
-/*
-	Seleciona todos os elementos
-*/
+/* ~ FONTS */
+
+@font-face {
+	font-family:'nunito_sans';
+	src:url("/fonts/nunitosans-regular-webfont.woff2") format("woff2"), url("/fonts/nunitosans-regular-webfont.woff") format("woff");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face {
+	font-family:'nunito_sans';
+	src:url("/fonts/nunitosans-bold-webfont.woff2") format("woff2"),url("/fonts/nunitosans-bold-webfont.woff") format("woff");
+	font-weight:700;
+	font-style:normal
+}
+
+@font-face {
+	font-family:'stratum';
+	src:url("/fonts/stratum1-bold-webfont.woff2") format("woff2"),url("/fonts/stratum1-bold-webfont.woff") format("woff");
+	font-weight:700;
+	font-style:normal
+}
+
+@font-face {
+	font-family:'stratum';
+	src:url("/fonts/stratum1-regular-webfont.woff2") format("woff2"),url("/fonts/stratum1-regular-webfont.woff") format("woff");
+	font-weight:normal;
+	font-style:normal
+}
+
+/* ~ HTML ELEMENTS */
+
 * {
 	margin:0;
 	padding:0;
@@ -9,4 +38,113 @@
 
 body {
 	line-height:1
+}
+
+.p,p {
+	display:block;
+	font-family:"nunito_sans",serif;
+	font-size:1.8rem;
+	line-height:1.66
+}
+
+@media (max-width: 599px) {
+	.p,p {
+		font-size:1.5rem
+	}
+}
+
+.h2 {
+	display:block;
+	font-family:"stratum","Arial Narrow","Trebuchet MS",sans-serif;
+	font-weight:700;
+	letter-spacing:3px;
+	text-transform:uppercase;
+	font-size:2.6rem;
+	letter-spacing:2px;
+	line-height:1.333;
+	margin-bottom:5px
+}
+
+@media (min-width: 850px) {
+	.h2 {
+		font-size:3.0rem
+	}
+}
+
+.main-header {
+	position:fixed;
+	width:100%;
+	z-index:10;
+	top:0;
+	left:0;
+	background:#1A1F21
+}
+
+/* ~ HOME */
+
+.home-intro {
+	position:relative;
+	display:flex;
+	align-items:center;
+	background:#22292C;
+	overflow:hidden;
+	z-index:2;
+	padding:60px 0 150px
+}
+
+.home-intro .home-intro__content {
+	display:inline-block;
+	background:#22292C;
+	border-radius:40px;
+	position:relative;
+	z-index:1
+}
+
+@media (min-height: 650px) {
+	.home-intro {
+		min-height:calc(100vh - 70px);
+		padding:60px 0 120px
+	}
+}
+
+.home-intro:before {
+	opacity:0.2
+}
+
+.home-intro p {
+	max-width:560px
+}
+
+.home {
+	background:#22292C;
+	overflow:hidden;
+	position:relative;
+	z-index:2
+}
+
+/* ~ CONTAINER */
+
+.container {
+	width:92%;
+	margin:0 auto;
+	max-width:1005px;
+	transition:max-width .4s ease-out
+}
+
+/* ~ TEXT & FONTS */
+
+.text-white {
+	color:#fff
+}
+
+.text-center {
+	text-align:center
+}
+
+.text-group>*:last-child, .text-group-short>*:last-child, .text-group-tall>*:last-child {
+	margin-bottom:0
+}
+
+.text-group>* {
+	margin-bottom:10px
 }
