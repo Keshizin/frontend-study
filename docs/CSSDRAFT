@@ -1,0 +1,121 @@
+What is CSS?
+- CSS stands for Cascading Style Sheets
+- CSS describes how HTML elements are to be displayed on screen, paper, or in
+  other media
+- CSS saves a lot of work. It can control the layout of multiple web pages all
+  at once
+- External stylesheets are stored in CSS files
+
+CSS is used to define styles for your web pages, including the design, layout
+and variations in display for different devices and screen sizes.
+
+HTML was NEVER intended to contain tags for formatting a web page! HTML was
+created to describe the content of a web page. CSS removed the style formatting
+from the HTML page!
+
+The style definitions are normally saved in external .css files. With an
+external stylesheet file, you can change the look of an entire website by
+changing just one file!
+
+-------------------------------------------------------------------------------
+CSS Syntax
+
+A CSS rule-set consists of a selector and a declaration block:
+
+   SELECTOR DECLARATION (property:value;)
+
+The selector points to the HTML element you want to style.
+
+The declaration block contains one or more declarations separated by
+semicolons.
+
+Each declaration includes a CSS property name and a value, separated by a
+colon.
+
+A CSS declaration always ends with a semicolon, and declaration blocks are
+surrounded by curly braces. 
+
+A CSS comment starts with /* and ends with */. Comments can also span multiple
+lines
+
+-------------------------------------------------------------------------------
+CSS Selectors
+
+CSS selectors are used to "find" (or select) the HTML elements you want to
+style.
+
+We can divide CSS selectors into five categories:
+
+   - Simple selectors
+     select elements based on name, id, class
+     Examples:
+      - p{color:black;}
+      - #myid {color:black;}
+      - .myclass {color:black;}
+      - p.myclass {color:black;}
+      - <p class="myclass1 myclass2">
+      - (universal) * {color:black;}
+      - (grouping) p, h1, h2 {color:black;}
+
+   - Combinator selectors
+     select elements based on a specific relationship between them
+
+   - Pseudo-class selectors
+     select elements based on a certain state
+
+   - Pseudo-elements selectors
+     select and style a part of an element
+
+   - Attribute selectors
+   select elements based on an attribute or attribute value
+
+-------------------------------------------------------------------------------
+
+Nota:
+
+The id attribute specifies a unique id for an HTML element (the value must be
+unique within the HTML document).
+
+The id value can be used by CSS and JavaScript to perform certain tasks for the
+element with the specific id value.
+
+The HTML class attribute is used to define equal styles for elements with the
+same class name.
+
+So, all HTML elements with the same class attribute will get the same style.
+
+-------------------------------------------------------------------------------
+
+Se você usar IDs, o CSS Lint irá acusar o seu CSS de quebrar a regra "Disallow
+IDs in selectors" (Proibir ID's em seletores).
+
+Não é à toa que o slogan do CSS Lint é "Will hurt your feelings" ("Irá ferir os
+seus sentimentos").
+
+De acordo com a documentação da regra:
+
+Por anos, desenvolvedores têm tratado IDs como um modo de dizer "aquela coisa!"
+Todavia, IDs têm um efeito colateral: eles devem ser únicos e não podem ser
+reutilizados. Você poderia em potencial estilizar todos os elementos de sua
+página utilizando seletores com ID, mas você perderia muito dos benefícios do
+CSS no processo.
+
+Um dos beneficios do CSS é a habilidade de reusar regras de estilo em múltiplos
+lugares. Quando você começa a utilizar seletores com ID, você está
+automaticamente limitando aquele estilo a um único elemento.
+
+Eu mesmo utilizo IDs em seletores e apesar de compreender e concordar com o
+argumento, pessoalmente não considero uma regra tão fundamental que não possa
+ser ignorada em alguns casos.
+
+A seção "Leitura Adicional" da documentação citada inclui dois artigos que
+atacam com veemência o uso de IDs em seletores. Um dos artigos atraiu grande
+quantidade dde comentários defendendo o uso de IDs em seletores:
+
+ - Don't use IDs in CSS selectors?
+ - Don't use ID selectors in CSS
+
+Eu pessoalmente recomendo evitar o uso de IDs. Porém, diferente da turma que
+estou citando, eu não acho que é uma "abominação terrivelmente monstruosa" a
+sua utilização. Melhor evitar, mas se usar de vez em quando, tudo bem! :-) É
+assim que eu penso. Tem coisas mais sérias com as quais se preocupar...
