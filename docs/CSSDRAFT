@@ -38,6 +38,9 @@ surrounded by curly braces.
 A CSS comment starts with /* and ends with */. Comments can also span multiple
 lines
 
+Note: Do not add a space between the property value and the unit (such as
+margin-left: 20 px;). The correct way is: margin-left: 20px;
+
 -------------------------------------------------------------------------------
 CSS Selectors
 
@@ -68,6 +71,35 @@ We can divide CSS selectors into five categories:
 
    - Attribute selectors
    select elements based on an attribute or attribute value
+
+-------------------------------------------------------------------------------
+There are three ways of inserting a style sheet:
+
+- External CSS
+<link rel="stylesheet" href="css/css-test.css" type="text/css">
+
+- Internal CSS
+An internal style sheet may be used if one single HTML page has a unique style.
+The internal style is defined inside the <style> element, inside the head
+section.
+
+<style>
+body {background-color: linen;}
+</style>
+
+- Inline CSS
+An inline style may be used to apply a unique style for a single element.
+To use inline styles, add the style attribute to the relevant element. The
+style attribute can contain any CSS property.
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+
+If some properties have been defined for the same selector (element) in
+different style sheets, the value from the last read style sheet will be used.
+
+------------------------------------------------------------------------------
+In CSS, a color can be specified by using a color name. CSS/HTML support 140
+standard color names.
 
 -------------------------------------------------------------------------------
 

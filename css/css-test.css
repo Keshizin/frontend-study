@@ -2,8 +2,18 @@
 	CSS - This css file is just for study! by Keshi.
 */
 
-* {}
+* {
+	color:white;
+}
+
+body {
+	background-color:black;
+}
 
 .main {
 	text-align: center;
+}
+
+.header {
+	margin-left:10%;
 }
