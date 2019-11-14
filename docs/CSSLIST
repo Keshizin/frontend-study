@@ -1,5 +1,42 @@
-background-color (backgroynd color for HTML element)
-color (color of text)
+# COLORS
+- color (color of text)
+   color: rgb(0, 0, 0);
+   color: rgba(0,0,0,0.5);
+   color: #000000;
+   color: hsl(1, 100%, 100%);
+   color: hsla(1, 100%, 100%, 0.5);
+
+-------------------------------------------------------------------------------
+
+# Background Properties
+
+- background-color (backgroynd color for HTML element)
+
+- background-image (specify an image to use as the background of an element)
+	background-image: url("img.gif")
+
+- background-repeat (repeats an image both horizontally and vertically)
+   background-image: url("img.png");
+   background-repeat: repeat-x;
+   background-repeat: repeat-y;
+   background-repeat: no-repeat;
+
+- background-position (specify the position of the background image)
+background-position: right top;
+
+- background-attachment (specifies whether the background image should scroll or be fixed)
+   background-attachment: fixed;
+   background-attachment: scroll;
+
+The shorthand property for background is background.
+background: #ffffff url("img_tree.png") no-repeat right top;
+
+- background-clip (Specifies the painting area of the background)
+- background-origin (Specifies where the background image(s) is/are positioned)
+- background-size (Specifies the size of the background image(s))
+
+-------------------------------------------------------------------------------
+
 <h1 style="background-color:rgb(255, 99, 71);">...</h1>
 <h1 style="background-color:#ff6347;">...</h1>
 <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
