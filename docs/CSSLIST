@@ -38,6 +38,7 @@ background: #ffffff url("img_tree.png") no-repeat right top;
 -------------------------------------------------------------------------------
 
 # Border propreties
+The CSS border properties allow you to specify the style, width, and color of an element's border.
 
 - border-style: dotted | dashed | solid | double | groove | ridge | inset | outset | none | hidden
 - border-style: (top) (right) (bottom) (left)
@@ -85,6 +86,32 @@ border-top-color  Sets the color of the top border
 border-top-style  Sets the style of the top border
 border-top-width  Sets the width of the top border
 border-width   Sets the width of the four borders
+
+-------------------------------------------------------------------------------
+
+CSS Margins
+The CSS margin properties are used to create space around elements, outside of any defined borders.
+
+
+- margin-top: auto | length (px, pt, cm) | % | inherit
+- margin-right: auto | length (px, pt, cm) | % | inherit
+- margin-bottom: auto | length (px, pt, cm) | % | inherit
+- margin-left: auto | length (px, pt, cm) | % | inherit
+Tip: Negative values are allowed.
+You can set the margin property to auto to horizontally center the element within its container.
+The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+Inherit copia o valor do pai
+
+- margin (shorthand)
+- margin: top right bottom left
+- margin: top right bottom
+- margin: top/bottom right/left
+- margin: all
+
+- margin: 25px 50px 75px 100px;
+
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+This does not happen on left and right margins! Only top and bottom margins!
 
 -------------------------------------------------------------------------------
 
