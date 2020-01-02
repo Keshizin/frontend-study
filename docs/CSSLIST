@@ -216,3 +216,65 @@ Margin - Clears an area outside the border. The margin is transparent
 The box model allows us to add a border around elements, and to define space between elements.
 
 Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+
+-------------------------------------------------------------------------------
+
+CSS Outline
+
+An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out"
+
+CSS has the following outline properties:
+
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+
+Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.
+
+The outline-style property specifies the style of the outline, and can have one of the following values:
+
+dotted - Defines a dotted outline
+dashed - Defines a dashed outline
+solid - Defines a solid outline
+double - Defines a double outline
+groove - Defines a 3D grooved outline
+ridge - Defines a 3D ridged outline
+inset - Defines a 3D inset outline
+outset - Defines a 3D outset outline
+none - Defines no outline
+hidden - Defines a hidden outline
+
+Note: None of the other outline properties will have any effect, unless the outline-style property is set!
+
+The outline-color property is used to set the color of the outline.
+
+The color can be set by:
+
+name - specify a color name, like "red"
+RGB - specify a RGB value, like "rgb(255,0,0)"
+Hex - specify a hex value, like "#ff0000"
+invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)
+
+The outline-width property specifies the width of the outline, and can have one of the following values:
+
+thin (typically 1px)
+medium (typically 3px)
+thick (typically 5px)
+A specific size (in px, pt, cm, em, etc)
+The following example shows some outlines with different widths:
+
+The outline property is a shorthand property for setting the following individual outline properties:
+
+outline-width
+outline-style (required)
+outline-color
+The outline property is specified as one, two, or three values from the list above. The order of the values does not matter.
+
+p.ex1 {outline: dashed;}
+p.ex2 {outline: dotted red;}
+p.ex3 {outline: 5px solid yellow;}
+p.ex4 {outline: thick ridge pink;}
+
+The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
